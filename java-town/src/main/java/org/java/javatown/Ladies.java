@@ -9,14 +9,14 @@ private boolean isFree;
     }
 
     public void getKidnapped(){
-        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH");
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH !! AAAA MOIIII !!! ");
     }
 
-    public void  getReleased(Human cowboy){
-        System.out.println("Oh vous êtes mon sauveur mr" + cowboy + " merci");
+    public void  getReleased(String cowboy){
+        System.out.println("Oh vous êtes mon héros" + " " + cowboy+ " merci");
     }
 
     public void changeDress(String colorDress){
-        System.out.println("Regardez ma nouvelle robe" + colorDress +"!");
+        System.out.println("Regardez ma nouvelle robe" + " " + colorDress +"!");
     }
 }

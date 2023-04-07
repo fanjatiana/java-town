@@ -13,10 +13,10 @@ public class Cowboys extends Human {
     }
 
     public void release(Human lady){
-        System.out.println("Vous voilà de nouveau libre charmante demoiselle" + " " + lady);
+        System.out.println("Vous voilà de nouveau libre charmante demoiselle" + " " + lady.getName());
     }
 
     public void shoot(Human robber){
-        System.out.println(this + " " + "tire sur" + " "+ robber + " " + "PAN !");
+        System.out.println(this.getName() + " " + "tire sur" + " "+ robber.getName() + " " + "PAN !");
     }
 }
