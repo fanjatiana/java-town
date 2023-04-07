@@ -2,7 +2,7 @@ package org.java.javatown;
 
 public class Cowboys extends Human {
     private int nbPopularity;
-    private String temperament;
+    private String temperament=" le vaillant";
 
     Cowboys(String name) {
         super(name);
@@ -19,4 +19,6 @@ public class Cowboys extends Human {
     public void shoot(Human robber){
         System.out.println(this.getName() + " " + "tire sur" + " "+ robber.getName() + " " + "PAN !");
     }
+
+
 }

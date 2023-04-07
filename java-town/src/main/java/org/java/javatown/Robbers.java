@@ -1,7 +1,7 @@
 package org.java.javatown;
 
 public class Robbers extends Human {
-    private String look = "méchant";
+    private String look = " le méchant";
     private int nbLadiesKidnapped;
     private int rewardIfWanted;
     private boolean isInPrison;
@@ -25,5 +25,11 @@ public class Robbers extends Human {
             System.out.println("Dépêchez vous sinon vous pourrez dire adieu aux" + " "+ sum+ " "+ "$ !");
         }
         return sum;
+    }
+
+    @Override
+    public String getName() {
+        String response = this.name + " " + this.look;
+        return response;
     }
 }

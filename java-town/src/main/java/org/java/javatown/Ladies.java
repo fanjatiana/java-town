@@ -19,4 +19,11 @@ private boolean isFree;
     public void changeDress(String colorDress){
         System.out.println("Regardez ma nouvelle robe" + " " + colorDress +"!");
     }
+
+    @Override
+    public String getName() {
+        String name = this.name;
+        String response = "Miss" + " " + name;
+        return response;
+    }
 }

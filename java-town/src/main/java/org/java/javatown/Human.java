@@ -1,7 +1,7 @@
 package org.java.javatown;
 
-public class Human {
-    private String name;
+public abstract class Human {
+    public String name;
     private String favoriteDrink = "eau";
 
     Human(String name) {
