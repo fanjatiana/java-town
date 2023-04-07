@@ -17,22 +17,27 @@ public class Story {
 
         // test Ladies class
         sophie.speak("Hey moi c'/est Sophie, 35 ans, célibaire...");
+        sophie.introduceOneself("rosé pamplemousse");
+        sophie.drink("jus de fruit");
         sophie.getKidnapped();
         sophie.getReleased("Georges");
         sophie.changeDress("rouge");
 
         // test Cowboys class
         john.speak("Je suis john !");
+        john.introduceOneself("rhum");
+        john.drink("rhum arrangé");
         john.toExclaim();
         john.release(sophie);
         john.shoot(robert);
 
         // test Robbers class
         sam.speak("je m'appelle sam!  ");
+        sam.introduceOneself("verre de lait");
+        sam.drink("de lait bien frais ! ");
         sam.captureALady(sophie);
         sam.toBeCaptured(john);
         sam.rewardIfCapture(Boolean.parseBoolean("false"));
-
     }
 
 }
