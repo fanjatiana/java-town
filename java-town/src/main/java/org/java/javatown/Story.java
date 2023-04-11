@@ -70,10 +70,16 @@ public class Story {
         john.capture(outlawRobert);
 
         // test classe CorruptMan
-
         Outlaw corruptMan = new CorruptMan("Erwan", 500);
         john.capture(corruptMan);
         sophie.getKidnapped(corruptMan);
+
+        // test classe Calamity
+        Outlaw ladyBandit = new CorruptMan("Calamity Jane",1000000);
+        ladyBandit.isCaptured(john);
+        ladyBandit.kidnapLadies(sophie);
+
+
     }
 
 
