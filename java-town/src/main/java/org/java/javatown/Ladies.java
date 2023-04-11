@@ -16,14 +16,26 @@ private boolean isFree;
         System.out.println("Oh vous êtes mon héros" + " " + cowboy+ " merci");
     }
 
-    public void changeDress(String colorDress){
+    public String changeDress(String colorDress){
         System.out.println("Regardez ma nouvelle robe" + " " + colorDress +"!");
+        return colorDress;
+    }
+
+
+
+    @Override
+    public String whatsYourName() {
+        String name = this.name;
+        System.out.println("Miss" + " " + name);;
+        return name;
     }
 
     @Override
-    public String getName() {
-        String name = this.name;
-        String response = "Miss" + " " + name;
-        return response;
+    public void introduceOneself(String favoriteDrink) {
+        super.introduceOneself(favoriteDrink);
+        favoriteDrink = "lait";
+        String newColorDress = changeDress("verte");
+        System.out.println("regardez ma belle robe " + newColorDress);
+        System.out.println("Ma boisson favorite est le " + favoriteDrink);
     }
 }

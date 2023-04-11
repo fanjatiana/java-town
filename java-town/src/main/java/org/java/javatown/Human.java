@@ -25,7 +25,14 @@ public abstract class Human {
         return this.name;
     };
 
+    public String whatsYourName(){
+        return this.name;
+    }
+
     public String getFavoriteDrink() {
         return favoriteDrink;
     };
+
+    //class HumanSpeak()
+
 }

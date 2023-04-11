@@ -20,5 +20,10 @@ public class Cowboys extends Human {
         System.out.println(this.getName() + " " + "tire sur" + " "+ robber.getName() + " " + "PAN !");
     }
 
-
+    @Override
+    public void introduceOneself(String favoriteDrink) {
+        super.introduceOneself(favoriteDrink);
+        favoriteDrink="Wisky";
+        System.out.println("Rien ne vaut un bon "+ favoriteDrink);
+    }
 }

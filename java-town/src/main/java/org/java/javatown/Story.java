@@ -7,8 +7,9 @@ public class Story {
     public static void main(String[] args) {
        // Human robert = new Human("Robert");
         Ladies sophie = new Ladies("Sophie");
-        Robbers sam = new Robbers("Sam");
+        Robbers sam = new Robbers("Sam", "Mechant",10,1000000);
         Cowboys john = new Cowboys("John");
+
 
         // test Human class
        // robert.speak(" salut à toi ! ");
@@ -17,11 +18,11 @@ public class Story {
 
         // test Ladies class
         sophie.speak("Hey moi c'/est Sophie, 35 ans, célibaire...");
+        sophie.whatsYourName();
         sophie.introduceOneself("rosé pamplemousse");
         sophie.drink("jus de fruit");
         sophie.getKidnapped();
         sophie.getReleased("Georges");
-        sophie.changeDress("rouge");
 
         // test Cowboys class
         john.speak("Je suis john !");
@@ -33,6 +34,7 @@ public class Story {
 
         // test Robbers class
         sam.speak("je m'appelle sam!  ");
+        sam.whatsYourName();
         sam.introduceOneself("verre de lait");
         sam.drink("de lait bien frais ! ");
         sam.captureALady(sophie);

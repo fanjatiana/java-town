@@ -6,8 +6,12 @@ public class Robbers extends Human {
     private int rewardIfWanted;
     private boolean isInPrison;
 
-    Robbers(String name) {
+    Robbers(String name, String look, int nbLadiesKidnapped, int rewardIfWanted) {
         super(name);
+        this.nbLadiesKidnapped =nbLadiesKidnapped;
+        this.rewardIfWanted = rewardIfWanted;
+
+
     }
 
     public void captureALady(Human lady){
@@ -29,7 +33,22 @@ public class Robbers extends Human {
 
     @Override
     public String getName() {
-        String response = this.name + " " + this.look;
-        return response;
+        return this.name;
+    }
+
+    @Override
+    public String whatsYourName() {
+        String name = this.name;
+        System.out.println(this.name + " " + this.look);;
+        return name;
+    }
+
+    @Override
+    public void introduceOneself(String favoriteDrink) {
+        favoriteDrink = "Tord-boyaux";
+        super.introduceOneself(favoriteDrink);
+        System.out.println("Bonjour je suis" + " " + this.name + " le " + this.look + " " + "j'aime boire du" + " " + favoriteDrink);
+        System.out.println("J'ai l'air " + this.look + " et j'ai déjà kidnappé " + this.nbLadiesKidnapped+ " dames !");
+        System.out.println("Ma tête est mise à prix à " + this.rewardIfWanted + "$ !");
     }
 }
