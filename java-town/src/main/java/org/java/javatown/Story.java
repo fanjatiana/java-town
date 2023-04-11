@@ -9,6 +9,7 @@ public class Story {
         Ladies sophie = new Ladies("Sophie");
         Robbers sam = new Robbers("Sam", "Mechant",10,1000000);
         Cowboys john = new Cowboys("John");
+        Barman sebastien = new Barman("Sebastien");
 
 
         // test Human class
@@ -40,6 +41,17 @@ public class Story {
         sam.captureALady(sophie);
         sam.toBeCaptured(john);
         sam.rewardIfCapture(Boolean.parseBoolean("false"));
+
+        // test Barman
+        sebastien.introduceOneself("vin");
+        sebastien.speak("allez un petit verre ");
+        sebastien.serveADrink(sophie);
+        sebastien.serveADrink(sam);
+        sebastien.serveADrink(john);
     }
+
+
+
+
 
 }

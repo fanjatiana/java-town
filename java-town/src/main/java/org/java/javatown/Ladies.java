@@ -33,9 +33,15 @@ private boolean isFree;
     @Override
     public void introduceOneself(String favoriteDrink) {
         super.introduceOneself(favoriteDrink);
-        favoriteDrink = "lait";
+
         String newColorDress = changeDress("verte");
         System.out.println("regardez ma belle robe " + newColorDress);
         System.out.println("Ma boisson favorite est le " + favoriteDrink);
+    }
+
+    @Override
+    public void drink(String favoriteDrink) {
+        favoriteDrink = "lait";
+        super.drink(favoriteDrink);
     }
 }

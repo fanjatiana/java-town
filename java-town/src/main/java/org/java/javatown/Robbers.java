@@ -8,6 +8,7 @@ public class Robbers extends Human {
 
     Robbers(String name, String look, int nbLadiesKidnapped, int rewardIfWanted) {
         super(name);
+        this.look = look;
         this.nbLadiesKidnapped =nbLadiesKidnapped;
         this.rewardIfWanted = rewardIfWanted;
 
