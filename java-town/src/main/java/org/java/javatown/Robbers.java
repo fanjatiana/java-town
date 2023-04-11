@@ -1,6 +1,6 @@
 package org.java.javatown;
 
-public class Robbers extends Human {
+public class Robbers extends Human implements Outlaw {
     private String look = " le méchant";
     private int nbLadiesKidnapped;
     private int rewardIfWanted;
@@ -15,12 +15,14 @@ public class Robbers extends Human {
 
     }
 
-    public void captureALady(Human lady){
+    public void captureALady( Ladies lady){
         System.out.println("Ah ah !" + " " +lady.getName() + " "+ "tu es mienne désormais");
     }
     public void toBeCaptured(Human cowboy){
         System.out.println("Damned, je suis fait !" + " "+ cowboy.getName() + " "+ "tu m’as eu !");
     }
+
+
 
     public int rewardIfCapture(boolean isInPrison){
         int sum = 10_000;
@@ -52,4 +54,27 @@ public class Robbers extends Human {
         System.out.println("J'ai l'air " + this.look + " et j'ai déjà kidnappé " + this.nbLadiesKidnapped+ " dames !");
         System.out.println("Ma tête est mise à prix à " + this.rewardIfWanted + "$ !");
     }
+
+    // implement methode
+    @Override
+    public void isCaptured(Cowboys cowboys) {
+        Outlaw.super.isCaptured(cowboys);
+        System.out.println(cowboys.getName() + "" + "m'attrapé !");
+    }
+
+    @Override
+    public void kidnapLadies(Ladies lady) {
+        Outlaw.super.kidnapLadies(lady);
+        System.out.println("ah ah j'ai kidnapé " + lady.getName() + " !");
+
+    }
+
+    @Override
+    public int getRewardValue() {
+        return Outlaw.super.getRewardValue();
+    }
+
+    @Override
+    public String getName(String name) {
+        return Outlaw.super.getName(name);    }
 }

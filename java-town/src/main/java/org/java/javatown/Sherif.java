@@ -1,6 +1,6 @@
 package org.java.javatown;
 
-public class Sherif extends Cowboys {
+public class Sherif extends Cowboys implements Outlaw {
  private String name;
     private String temperament=" honnête";
     private  int nbBanditsArrested;

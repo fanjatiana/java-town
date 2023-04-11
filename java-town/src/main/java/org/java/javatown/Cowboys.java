@@ -20,6 +20,10 @@ public class Cowboys extends Human {
         System.out.println(this.getName() + " " + "tire sur" + " "+ robber.getName() + " " + "PAN !");
     }
 
+    public void capture(Outlaw outlaw){
+        System.out.println("ah ah pris la main dans le sac !");
+    }
+
     @Override
     public void introduceOneself(String favoriteDrink) {
         super.introduceOneself(favoriteDrink);

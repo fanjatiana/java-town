@@ -23,7 +23,7 @@ public class Story {
         sophie.whatsYourName();
         sophie.introduceOneself("rosé pamplemousse");
         sophie.drink("jus de fruit");
-        sophie.getKidnapped();
+        sophie.getKidnapped(sam);
         sophie.getReleased("Georges");
 
         // test Cowboys class
@@ -60,6 +60,20 @@ public class Story {
         Cowboys clint = new Sherif("Clint",100);
         /*clint ne peut pas attraper de brigand car la méthode catchBandit()
         n'est définie que dans la classe Shérif qui extend  la classe Cowboys */
+
+
+        // interface
+        Outlaw outlawRobert = new Robbers("Rober", "Terrible", 500, 50_000);
+        outlawRobert.kidnapLadies(sophie);
+        outlawRobert.isCaptured(john);
+        sophie.getKidnapped(outlawRobert);
+        john.capture(outlawRobert);
+
+        // test classe CorruptMan
+
+        Outlaw corruptMan = new CorruptMan("Erwan", 500);
+        john.capture(corruptMan);
+        sophie.getKidnapped(corruptMan);
     }
 
 

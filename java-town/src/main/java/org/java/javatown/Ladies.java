@@ -8,8 +8,8 @@ private boolean isFree;
         super(name);
     }
 
-    public void getKidnapped(){
-        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH !! AAAA MOIIII !!! ");
+    public void getKidnapped(Outlaw outlaw){
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH !! AAAA MOIIII !!!");
     }
 
     public void  getReleased(String cowboy){
@@ -20,6 +20,8 @@ private boolean isFree;
         System.out.println("Regardez ma nouvelle robe" + " " + colorDress +"!");
         return colorDress;
     }
+
+
 
 
 
