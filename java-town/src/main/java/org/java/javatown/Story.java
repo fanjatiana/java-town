@@ -79,6 +79,10 @@ public class Story {
         ladyBandit.isCaptured(john);
         ladyBandit.kidnapLadies(sophie);
 
+        // test classe Indien
+        Indian indian = new Indian("Chetan",15,"Faucon", "'ayahuasca");
+        indian.scalp(john);
+
 
     }
 
