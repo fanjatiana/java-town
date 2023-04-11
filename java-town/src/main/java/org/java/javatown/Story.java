@@ -10,6 +10,7 @@ public class Story {
         Robbers sam = new Robbers("Sam", "Mechant",10,1000000);
         Cowboys john = new Cowboys("John");
         Barman sebastien = new Barman("Sebastien");
+        Sherif bob = new Sherif("Sherif", 150);
 
 
         // test Human class
@@ -48,6 +49,17 @@ public class Story {
         sebastien.serveADrink(sophie);
         sebastien.serveADrink(sam);
         sebastien.serveADrink(john);
+
+        // test Sherif Bob
+        bob.introduceOneself("café");
+        bob.catchABandit(sam);
+        bob.lookForABandit(sam);
+
+        // ex Question 2.7: Les shérifs sont des cowboys dans l’âme
+
+        Cowboys clint = new Sherif("Clint",100);
+        /*clint ne peut pas attraper de brigand car la méthode catchBandit()
+        n'est définie que dans la classe Shérif qui extend  la classe Cowboys */
     }
 
 
