@@ -1,7 +1,6 @@
 package org.java.javatown;
 
 public class CorruptMan implements Outlaw {
-
     private String nom;
     private int rewardValue;
 
@@ -13,7 +12,7 @@ public class CorruptMan implements Outlaw {
     @Override
     public void kidnapLadies(Ladies lady) {
         Outlaw.super.kidnapLadies(lady);
-        System.out.println(nom +" le ripoux, a kidnapé " + lady.getName());
+        System.out.println(nom + " le ripoux, a kidnapé " + lady.getName());
     }
 
     @Override
@@ -24,7 +23,7 @@ public class CorruptMan implements Outlaw {
     @Override
     public void isCaptured(Cowboys cowboys) {
         Outlaw.super.isCaptured(cowboys);
-        System.out.println(nom +" le ripoux, a été arrêté par " + cowboys.getName());
+        System.out.println(nom + " le ripoux, a été arrêté par " + cowboys.getName());
     }
 
     @Override

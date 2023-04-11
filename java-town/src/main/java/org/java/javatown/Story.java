@@ -1,22 +1,21 @@
 package org.java.javatown;
 
 /*
-* Dans cette classe Histoire, vous créerez un humain qui se présente et qui boit.
-* */
+ * Dans cette classe Histoire, vous créerez un humain qui se présente et qui boit.
+ * */
 public class Story {
     public static void main(String[] args) {
-       // Human robert = new Human("Robert");
-        Ladies sophie = new Ladies("Sophie");
-        Robbers sam = new Robbers("Sam", "Mechant",10,1000000);
-        Cowboys john = new Cowboys("John");
-        Barman sebastien = new Barman("Sebastien");
-        Sherif bob = new Sherif("Sherif", 150);
-
 
         // test Human class
-       // robert.speak(" salut à toi ! ");
+        // robert.speak(" salut à toi ! ");
         //robert.introduceOneself("Vin");
         //robert.drink("vin");
+
+        Ladies sophie = new Ladies("Sophie");
+        Bandits sam = new Bandits("Sam", "Mechant", 10, 1000000);
+        Cowboys john = new Cowboys("John");
+        Bartender sebastien = new Bartender("Sebastien");
+        Sherif bob = new Sherif("Sherif", 150);
 
         // test Ladies class
         sophie.speak("Hey moi c'/est Sophie, 35 ans, célibaire...");
@@ -34,7 +33,7 @@ public class Story {
         john.release(sophie);
         john.shoot(sam);
 
-        // test Robbers class
+        // test Bandits class
         sam.speak("je m'appelle sam!  ");
         sam.whatsYourName();
         sam.introduceOneself("verre de lait");
@@ -43,7 +42,7 @@ public class Story {
         sam.toBeCaptured(john);
         sam.rewardIfCapture(Boolean.parseBoolean("false"));
 
-        // test Barman
+        // test Bartender
         sebastien.introduceOneself("vin");
         sebastien.speak("allez un petit verre ");
         sebastien.serveADrink(sophie);
@@ -56,14 +55,12 @@ public class Story {
         bob.lookForABandit(sam);
 
         // ex Question 2.7: Les shérifs sont des cowboys dans l’âme
-
-        Cowboys clint = new Sherif("Clint",100);
+        Cowboys clint = new Sherif("Clint", 100);
         /*clint ne peut pas attraper de brigand car la méthode catchBandit()
         n'est définie que dans la classe Shérif qui extend  la classe Cowboys */
 
-
         // interface
-        Outlaw outlawRobert = new Robbers("Rober", "Terrible", 500, 50_000);
+        Outlaw outlawRobert = new Bandits("Rober", "Terrible", 500, 50_000);
         outlawRobert.kidnapLadies(sophie);
         outlawRobert.isCaptured(john);
         sophie.getKidnapped(outlawRobert);
@@ -75,19 +72,12 @@ public class Story {
         sophie.getKidnapped(corruptMan);
 
         // test classe Calamity
-        Outlaw ladyBandit = new CorruptMan("Calamity Jane",1000000);
+        Outlaw ladyBandit = new CorruptMan("Calamity Jane", 1000000);
         ladyBandit.isCaptured(john);
         ladyBandit.kidnapLadies(sophie);
 
         // test classe Indien
-        Indian indian = new Indian("Chetan",15,"Faucon", "'ayahuasca");
+        Indian indian = new Indian("Chetan", 15, "Faucon", "'ayahuasca");
         indian.scalp(john);
-
-
     }
-
-
-
-
-
 }
